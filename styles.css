@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+    color: #333;
+    padding-top: 85px;
+}
+header {
+    background-color: #e6002e; /* Fondo translúcido (negro con 70% de opacidad) */
+    color: whitesmoke;
+    padding: 0px 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Hace que el header se quede fijo en la parte superior */
+    top: 0; /* Asegura que quede en la parte superior de la página */
+    left: 0; /* Alineación desde la izquierda */
+    width: 100%; /* Asegura que ocupe todo el ancho de la página */
+    z-index: 1000; /* Asegura que el header quede por encima de otros elementos */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+nav a {
+    color: #e6002e;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+}
+/* Estilo general para la sección del catálogo */
+#catalogo {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contenedor de las tarjetas */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten si la pantalla es más pequeña */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espaciado entre las tarjetas */
+    margin-top: 50px;
+    background-color: #333;
+    padding: 3.0%;
+}
+.card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+    box-shadow: 0 8px 20px rgb(255, 3, 3); /* Incrementa la sombra */
+    transform: translatey(-10px)
+    
+}
+
+/* Estilo de las tarjetas */
+.card {
+    background-color:white; /* Fondo claro para las tarjetas */
+    border: 1px solid #ccc; /* Borde de las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 300px; /* Ancho fijo para las tarjetas */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido interno esté apilado */
+    align-items: center; /* Centra los elementos dentro de la tarjeta */
+    text-align: center;
+    box-shadow: 0 6px 8px
+}
+
+/* Imagen dentro de las tarjetas */
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+    margin-bottom: 15px;
+}
+
+/* Botón de compra */
+.buy-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+}
+footer a {
+    color: #e6002e;
+    text-decoration: none;
+}
+#productos {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+/* Alinear listas horizontalmente */
+#productos ol, #productos ul {
+    display: flex; /* Aplica Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si hay poco espacio */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espaciado entre elementos */
+    list-style: none; /* Elimina los marcadores predeterminados */
+    padding: 0; /* Quita el relleno */
+    margin: 0; /* Quita márgenes */
+}
+
+/* Estilo para los elementos de las listas */
+#productos li {
+    padding: 10px 20px; /* Añade relleno interno */
+    background-color: whitesmoke; /* Fondo blanco para resaltar */
+    border: 1px solid black; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    font-size: 1em;
+    color: #333;
+    transition: transform 0.2s, background-color 0.2s; /* Animación */
+}
+
+/* Efecto hover en los elementos */
+#productos li:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    background-color: red; /* Fondo verde en hover */
+    color: white; /* Cambia el color del texto */
+
+}
+

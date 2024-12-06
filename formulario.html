@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro Postobón</title>
+    <style>
+        /* Estilo general de la página */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Contenedor principal del formulario */
+        .form-container {
+            background-color: white;
+            width: 80%;
+            max-width: 500px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Título del formulario */
+        h2 {
+            color: red;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo de los campos de entrada */
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        /* Estilo de los campos de texto más grandes */
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        /* Estilo de los botones */
+        button {
+            background-color: #FF6F00;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+
+        /* Estilo de las etiquetas */
+        label {
+            font-size: 14px;
+            color: #333;
+            text-align: left;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Estilo de los radio buttons */
+        .gender-options label {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Logo de Postobón */
+        .logo {
+            width: 150px;
+            margin: 20px 0;
+        }
+
+        /* Estilo del mensaje de copyright */
+        .copyright {
+            font-size: 12px;
+            color: #777;
+            margin-top: 20px;
+        }
+
+        /* Estilo de la página para dispositivos móviles */
+        @media (max-width: 768px) {
+            .form-container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .logo {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <!-- Logo de Postobón -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Postob%C3%B3n_logo.svg/1200px-Postob%C3%B3n_logo.svg.png" alt="Postobón Logo" class="logo">
+        
+        <h2>Formulario de Registro Postobón</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Ingrese su apellido" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese su correo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="genero">Género:</label>
+                <div class="gender-options">
+                    <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+                    <label><input type="radio" name="genero" value="femenino" required> Femenino</label>
+                    <label><input type="radio" name="genero" value="otro" required> Otro</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" placeholder="Escribe un breve comentario..." required></textarea>
+            </div>
+
+            <button type="submit">Registrar</button>
+        </form>
+        
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&copy; 2024 Postobón S.A. Todos los derechos reservados.</p>
+        </div>
+    </div>
+
+</body>
+</html>
